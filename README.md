@@ -1,2 +1,5 @@
 # dotfiles
-Arch Linux dotfiles and configuration
+OS: Arch Linux
+i3 + conky + compton + rofi + polybar
+
+
