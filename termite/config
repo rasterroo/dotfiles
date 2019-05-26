@@ -3,52 +3,53 @@ font = Source Code Pro 10
 #font = Powerline 10
 
 scrollback_lines = 50000
-[colors]
-# Base16 Twilight
-# Author: David Hart (https://github.com/hartbit)
 
-foreground          = #a7a7a7
-foreground_bold     = #c3c3c3
-cursor              = #c3c3c3
-cursor_foreground   = #1e1e1e
-background          = rgba(30, 30, 30)
+[colors]
+# Base16 Nord
+# Author: arcticicestudio
+
+foreground          = #E5E9F0
+foreground_bold     = #ECEFF4
+cursor              = #ECEFF4
+cursor_foreground   = #2E3440
+background          = rgba(46, 52, 64)
 
 # 16 color space
 
 # Black, Gray, Silver, White
-color0  = #1e1e1e
-color8  = #5f5a60
-color7  = #a7a7a7
-color15 = #ffffff
+color0  = #2E3440
+color8  = #4C566A
+color7  = #E5E9F0
+color15 = #8FBCBB
 
 # Red
-color1  = #cf6a4c
-color9  = #cf6a4c
+color1  = #88C0D0
+color9  = #88C0D0
 
 # Green
-color2  = #8f9d6a
-color10 = #8f9d6a
+color2  = #BF616A
+color10 = #BF616A
 
 # Yellow
-color3  = #f9ee98
-color11 = #f9ee98
+color3  = #5E81AC
+color11 = #5E81AC
 
 # Blue
-color4  = #7587a6
-color12 = #7587a6
+color4  = #EBCB8B
+color12 = #EBCB8B
 
 # Purple
-color5  = #9b859d
-color13 = #9b859d
+color5  = #A3BE8C
+color13 = #A3BE8C
 
 # Teal
-color6  = #afc4db
-color14 = #afc4db
+color6  = #D08770
+color14 = #D08770
 
 # Extra colors
-color16 = #cda869
-color17 = #9b703f
-color18 = #323537
-color19 = #464b50
-color20 = #838184
-color21 = #c3c3c3
+color16 = #81A1C1
+color17 = #B48EAD
+color18 = #3B4252
+color19 = #434C5E
+color20 = #D8DEE9
+color21 = #ECEFF4
