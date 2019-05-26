@@ -1,85 +1,55 @@
-;; Global WM Settings
+[options]
+font = Source Code Pro 10
+#font = Powerline 10
 
-[global/wm]
-margin-top = 5
-margin-bottom = 5
-
-;; =================================
-
-
-;; File Inclusion
-
-include-file = ~/.config/polybar/modules.ini
-
-;; =================================
+scrollback_lines = 50000
 
 [colors]
+# Base16 Nord
+# Author: arcticicestudio
 
-background = #1e1b1e
-background-alt = #5E81AC
-foreground = #dbdbd3
-foreground-alt = #5E81AC
+foreground          = #E5E9F0
+foreground_bold     = #ECEFF4
+cursor              = #ECEFF4
+cursor_foreground   = #2E3440
+background          = rgba(46, 52, 64)
 
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+# 16 color space
 
+# Black, Gray, Silver, White
+color0  = #2E3440
+color8  = #4C566A
+color7  = #E5E9F0
+color15 = #8FBCBB
 
-;; Bar Settings
+# Red
+color1  = #88C0D0
+color9  = #88C0D0
 
-[bar/pbar]
+# Green
+color2  = #BF616A
+color10 = #BF616A
 
-;; Positioning
-width = 100%
-height = 30
-fixed-center = true
+# Yellow
+color3  = #5E81AC
+color11 = #5E81AC
 
-;; Colors
-background = ${colors.background}
-foreground = ${colors.foreground}
+# Blue
+color4  = #EBCB8B
+color12 = #EBCB8B
 
-;; Line
-line-size = 0
-line-color = ${colors.foreground-alt}
+# Purple
+color5  = #A3BE8C
+color13 = #A3BE8C
 
-;; Padding & Margins
-padding-left = 0
-padding-right = 1
+# Teal
+color6  = #D08770
+color14 = #D08770
 
-module-margin-left = 2
-module-margin-right = 2
-
-;; Border
-;border-top-size = 2
-;border-top-color = ${colors.foreground-alt}
-
-;; Fonts
-font-0 = NotoSans Nerd Font:style=Regular:pixelsize=12;3
-font-1 = FontAwesome5Free:style=Solid:pixelsize=12;3
-font-2 = FontAwesome5Free:style=Regular:pixelsize=12;3
-font-3 = FontAwesome5Brands:pixelsize=12;3
-
-;; Modules
-modules-left = i3
-modules-center = date
-modules-right = weather backlight volume battery 
-
-;; Trayo
-;;tray-position = right
-;;tray-padding = 2
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
-;; =================================
-
-
-;; Settings
-
-[settings]
-screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = false
+# Extra colors
+color16 = #81A1C1
+color17 = #B48EAD
+color18 = #3B4252
+color19 = #434C5E
+color20 = #D8DEE9
+color21 = #ECEFF4
