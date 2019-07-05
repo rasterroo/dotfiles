@@ -1,55 +1,65 @@
 [options]
-font = Source Code Pro 10
-#font = Powerline 10
 
-scrollback_lines = 50000
+allow_bold = true
+audible_bell = true
+browser = xdg-open
+clickable_url = true
+cursor_blink = system
+cursor_shape = block
+dynamic_title = true
+filter_unmatched_urls = true
+geometry = 480x280
+icon_name = terminal
+modify_other_keys = false
+mouse_autohide = false
+scroll_on_output = false
+scroll_on_keystroke = true
+scrollback_lines = 15000
+size_hints = false
+search_wrap = true
+urgent_on_bell = true
+highlight = #30343e
+
+font = Source Code Pro 10
 
 [colors]
-# Base16 Nord
-# Author: arcticicestudio
 
-foreground          = #E5E9F0
-foreground_bold     = #ECEFF4
-cursor              = #ECEFF4
-cursor_foreground   = #2E3440
-background          = rgba(46, 52, 64)
+# special
+foreground      = #ececdf
+foreground_bold = #ececdf
+cursor          = #ececdf
+background      = #0c1519
 
-# 16 color space
+# black
+color0  = #0c1519
+color8  = #a5a59c
 
-# Black, Gray, Silver, White
-color0  = #2E3440
-color8  = #4C566A
-color7  = #E5E9F0
-color15 = #8FBCBB
+# red
+color1  = #cfae64
+color9  = #cfae64
 
-# Red
-color1  = #88C0D0
-color9  = #88C0D0
+# green
+color2  = #e1c472
+color10 = #e1c472
 
-# Green
-color2  = #BF616A
-color10 = #BF616A
+# yellow
+color3  = #6c978a
+color11 = #6c978a
 
-# Yellow
-color3  = #5E81AC
-color11 = #5E81AC
+# blue
+color4  = #96b099
+color12 = #96b099
 
-# Blue
-color4  = #EBCB8B
-color12 = #EBCB8B
+# magenta
+color5  = #b2c5a5
+color13 = #b2c5a5
 
-# Purple
-color5  = #A3BE8C
-color13 = #A3BE8C
+# cyan
+color6  = #dcd5a3
+color14 = #dcd5a3
 
-# Teal
-color6  = #D08770
-color14 = #D08770
+# white
+color7  = #ececdf
+color15 = #ececdf
 
-# Extra colors
-color16 = #81A1C1
-color17 = #B48EAD
-color18 = #3B4252
-color19 = #434C5E
-color20 = #D8DEE9
-color21 = #ECEFF4
+

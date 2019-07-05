@@ -34,13 +34,27 @@ exec --no-startup-id feh --bg-fill ~/Pictures/firestorm.png
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # launch compton
-exec compton
+#exec compton
+#exec compton -bc -r 3 -l -4 -t -4 --shadow-exclude '_GTK_FRAME_EXTENTS@:c'
+
+################
+# Tray applets #
+################
+
+# launch blueman-applet
+exec_always --no-startup-id blueman-applet
+
+# launch nm-applet 
+exec_always --no-startup-id nm-applet
+
+assign [class="code"] 2
+#assign [class="spotify"] 4
 
 # launch terminal instance
 exec --no-startup-id i3-msg 'workspace 1; exec termite'
-exec --no-startup-id i3-msg 'workspace 2; exec firefox'
-#exec --no-startup-id i3-msg 'workspace 3; exec spotify'
-
+exec --no-startup-id i3-msg 'workspace 2; exec code'
+exec --no-startup-id i3-msg 'workspace 3; exec chromium'
+#exec --no-startup-id i3-msg 'workspace 4; exec spotify'
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -61,8 +75,11 @@ bindsym $mod+Shift+q kill
 # run rofi instead
 bindsym $mod+d exec --no-startup-id rofi -show run
 
-# cycle through tabs with rofi
-bindsym $mod+Tab exec rofi -show window
+
+# switch to next/prev workspace
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
 
 # change focus
 bindsym $mod+j focus left
@@ -150,8 +167,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # hide_edge_borders vertical
 #new_window pixel 0
-for_window [class="^.*"] border pixel 1
-new_window 1pixel
+for_window [class="^.*"] border pixel 0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -183,6 +199,12 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
+
+
+gaps inner 20
+gaps outer 5
+
+smart_gaps on
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
