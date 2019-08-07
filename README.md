@@ -11,8 +11,8 @@ Polybar uses [wedder](https://github.com/awersching/wedder).
 
 Disclaimer: This config is geared towards laptops, as the i3 and polybar configs assume so. Also, some of the video card and screen/keyboard backend lines may need to be changed depending on your laptop's hardware.
 
-The wallpaper can be found here: https://www.deviantart.com/tatasz/art/Firestorm-524659173
-The cat cup wallpaper can be found here: 
+cat wallpaper: https://imgur.com/a/nwrAFSJ
+mountains wallpaper: https://unsplash.com/photos/K0VLuATuQ9o
 
 ![](screenshots/arch-ricev2.png)
 

@@ -28,7 +28,7 @@ bindsym XF86AudioPrev exec playerctl previous
 ######################
 
 # set background
-exec --no-startup-id feh --bg-fill ~/Pictures/firestorm.png
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/wall1.jpg
 
 # launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -36,6 +36,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # launch compton
 #exec compton
 #exec compton -bc -r 3 -l -4 -t -4 --shadow-exclude '_GTK_FRAME_EXTENTS@:c'
+exec compton -b --config ~/.config/compton/compton.conf
 
 ################
 # Tray applets #
@@ -47,13 +48,10 @@ exec_always --no-startup-id blueman-applet
 # launch nm-applet 
 exec_always --no-startup-id nm-applet
 
-assign [class="code"] 2
-#assign [class="spotify"] 4
-
 # launch terminal instance
 exec --no-startup-id i3-msg 'workspace 1; exec termite'
-exec --no-startup-id i3-msg 'workspace 2; exec code'
-exec --no-startup-id i3-msg 'workspace 3; exec chromium'
+#exec --no-startup-id i3-msg 'workspace 2; exec code'
+#exec --no-startup-id i3-msg 'workspace 3; exec chromium'
 #exec --no-startup-id i3-msg 'workspace 4; exec spotify'
 
 
@@ -200,9 +198,13 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+#Enable/disable gaps
 
-gaps inner 20
-gaps outer 5
+gaps inner 10
+gaps outer 10
+
+bindsym $mod+z		gaps outer current plus 5
+bindsym $mod+Shift+z	gaps outer current minus 5
 
 smart_gaps on
 

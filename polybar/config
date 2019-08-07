@@ -10,18 +10,18 @@ margin-bottom = 5
 ;; File Inclusion
 
 include-file = ~/.config/polybar/modules.ini
-include-file = ~/.config/polybar/custom_modules.ini
 
 ;; =================================
 
 [colors]
 
-background = ${xrdb:background:#222}
+
+background = #dd1d1f21
 background-alt = #2E3440
 foreground = #dbdbd3
 foreground-alt = #2E3440
 
-primary = #ffb52a
+primary = #FFD27F
 secondary = #e60053
 alert = #bd2c40
 
@@ -32,7 +32,7 @@ alert = #bd2c40
 
 ;; Positioning
 width = 100%
-height = 32
+height = 30
 fixed-center = true
 
 ;; Colors
@@ -40,7 +40,7 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 ;; Line
-line-size = 2
+line-size = 3
 line-color = ${colors.foreground-alt}
 
 ;; Padding & Margins
@@ -56,21 +56,20 @@ module-margin-right = 1
 
 ;; Fonts
 
-font-0 = NotoSansMono Nerd Font:style=Regular:pixelsize=12;3
-font-1 = FontAwesome5Free:style=Solid:pixelsize=12;3
-font-2 = FontAwesome5Free:style=Regular:pixelsize=12;3
-font-3 = FontAwesome5Brands:pixelsize=12;3
+font-0 = "NotoSansMono Nerd Font:style=Regular:pixelsize=13;3"
+font-1 = "FontAwesome5Free:style=Solid:pixelsize=13;3"
+font-2 = "FontAwesome5Free:style=Regular:pixelsize=13;3"
+font-3 = "FontAwesome5Brands:pixelsize=13;3"
 
 
 ;; Modules
-modules-left = i3
-modules-center = date
-modules-right = backlight volume battery 
+modules-left = i3 
+modules-center = date 
+modules-right = spotify filesystem backlight volume battery 
 
-;; Trayo
+;; Tray
 tray-position = right
 tray-padding = 2
-tray-transparent = true
 
 cursor-click = pointer
 cursor-scroll = ns-resize
