@@ -1,6 +1,6 @@
 # dotfiles
 ## OS: Arch Linux  
-## i3-gaps + compton + rofi + polybar
+## i3 + compton + rofi + polybar
 
 My attempt at a simple but complete setup.
 
